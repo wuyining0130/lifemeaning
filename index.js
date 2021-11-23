@@ -20,7 +20,7 @@ const phb = [
     "荒诞主义、",
     "中国特色社会主义、"
 ]
-const food = [
+const nature = [
     "一月",
     "二月",
     "三月",
@@ -72,7 +72,7 @@ const food = [
 
 
 ]
-const thing = [
+const poem = [
     "尝试被改变的命运",
     "多雨的黄昏",
     "无疾而终的恋爱",
@@ -96,7 +96,8 @@ const thing = [
     "破败郊区的月亮",
     "一日天堂十日地狱的爱",
     "有人在家的房子",
-    "孩提时代的下课铃"
+    "孩提时代的下课铃",
+    "南方小镇的雨季",
 ]
 
 // 取随机数
@@ -118,9 +119,9 @@ function generate() {
         document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是巧克力、素食、土色衣服、猫、doi、睡觉和吴逸宁。' + '</div>'
     }
     else if (name === '吴逸宁') {
-        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(phb) + randomWord(food) + '和黄格妍。' + '</div>'
+        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(nature) + '、'+randomWord(poem) + '和黄格妍。' + '</div>'
     } else {
-        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(phb) + randomWord(food) + '和' + randomWord(thing) + '。' + '</div>'
+        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(phb) + randomWord(nature) + '和' + randomWord(poem) + '。' + '</div>'
     }
 
 }
