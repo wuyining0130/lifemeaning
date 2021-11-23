@@ -74,10 +74,10 @@ function generate() {
     let name = document.querySelector('input').value
 
     if (name === '黄格妍') {
-        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是、' + randomWord(phb) + randomWord(food) + '和吴逸宁。' + '</div>'
+        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(phb) + randomWord(food) + '和吴逸宁。' + '</div>'
     }
-    if (name === '吴逸宁') {
-        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是、' + randomWord(phb) + randomWord(food) + '和黄格妍。' + '</div>'
+    else if (name === '吴逸宁') {
+        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(phb) + randomWord(food) + '和黄格妍。' + '</div>'
     } else {
         document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(phb) + randomWord(food) + '和' + randomWord(thing) + '。' + '</div>'
     }
