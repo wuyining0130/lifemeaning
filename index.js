@@ -115,7 +115,7 @@ function generate() {
     let name = document.querySelector('input').value
 
     if (name === '黄格妍') {
-        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是巧克力、速食、土色衣服、猫、doi、睡觉和吴逸宁。' + '</div>'
+        document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是巧克力、速食、土色衣服、猫、睡觉和吴逸宁。' + '</div>'
     }
     else if (name === '吴逸宁') {
         document.querySelector('#text').innerHTML = '<div class="content">' + name.toString() + '的意义是' + randomWord(nature) + '、'+randomWord(poem) + '和黄格妍。' + '</div>'
